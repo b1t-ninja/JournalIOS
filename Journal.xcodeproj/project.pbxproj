@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC4A45802BF290C600F22AF6 /* JournalEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4A457F2BF290C600F22AF6 /* JournalEntryView.swift */; };
+		BC4A45822BF290E200F22AF6 /* JournalEntryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4A45812BF290E200F22AF6 /* JournalEntryDetailView.swift */; };
+		BC700DD62BF1040100E26696 /* JournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700DD52BF1040100E26696 /* JournalApp.swift */; };
+		BC700DD82BF1040100E26696 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700DD72BF1040100E26696 /* ContentView.swift */; };
+		BC700DDA2BF1040200E26696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC700DD92BF1040200E26696 /* Assets.xcassets */; };
+		BC700DDD2BF1040200E26696 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC700DDC2BF1040200E26696 /* Preview Assets.xcassets */; };
+		BC700DE72BF1040200E26696 /* JournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700DE62BF1040200E26696 /* JournalTests.swift */; };
+		BC700DF12BF1040200E26696 /* JournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700DF02BF1040200E26696 /* JournalUITests.swift */; };
+		BC700DF32BF1040200E26696 /* JournalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700DF22BF1040200E26696 /* JournalUITestsLaunchTests.swift */; };
+		BC700E0F2BF1057500E26696 /* Satoshi-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC700E052BF1057500E26696 /* Satoshi-Bold.otf */; };
+		BC700E102BF1057500E26696 /* Satoshi-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC700E062BF1057500E26696 /* Satoshi-Light.otf */; };
+		BC700E132BF1057500E26696 /* Satoshi-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC700E092BF1057500E26696 /* Satoshi-Medium.otf */; };
+		BC700E152BF1057500E26696 /* Satoshi-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC700E0B2BF1057500E26696 /* Satoshi-Black.otf */; };
+		BC700E182BF1057500E26696 /* Satoshi-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC700E0E2BF1057500E26696 /* Satoshi-Regular.otf */; };
+		BC700E232BF1058C00E26696 /* CabinetGrotesk-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC700E1B2BF1058C00E26696 /* CabinetGrotesk-Light.otf */; };
+		BC700E242BF1058C00E26696 /* CabinetGrotesk-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC700E1C2BF1058C00E26696 /* CabinetGrotesk-Regular.otf */; };
+		BC700E252BF1058C00E26696 /* CabinetGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC700E1D2BF1058C00E26696 /* CabinetGrotesk-Medium.otf */; };
+		BC700E262BF1058C00E26696 /* CabinetGrotesk-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC700E1E2BF1058C00E26696 /* CabinetGrotesk-Black.otf */; };
+		BC700E282BF1058C00E26696 /* CabinetGrotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC700E202BF1058C00E26696 /* CabinetGrotesk-Bold.otf */; };
+		BC700E2E2BF106D600E26696 /* SatoshiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700E2D2BF106D600E26696 /* SatoshiView.swift */; };
+		BC700E302BF1091400E26696 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700E2F2BF1091400E26696 /* Font.swift */; };
+		BC700E322BF1093400E26696 /* CabinetGroteskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700E312BF1093400E26696 /* CabinetGroteskView.swift */; };
+		BC700E362BF109A800E26696 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700E352BF109A800E26696 /* Colors.swift */; };
+		BC700E3A2BF10BB400E26696 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700E392BF10BB400E26696 /* JournalEntry.swift */; };
+		BC700E3C2BF10C3100E26696 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700E3B2BF10C3100E26696 /* Mood.swift */; };
+		BC700E3F2BF10CE400E26696 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700E3E2BF10CE400E26696 /* MockData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC700DE32BF1040200E26696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC700DCA2BF1040100E26696 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC700DD12BF1040100E26696;
+			remoteInfo = Journal;
+		};
+		BC700DED2BF1040200E26696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC700DCA2BF1040100E26696 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC700DD12BF1040100E26696;
+			remoteInfo = Journal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC4A457F2BF290C600F22AF6 /* JournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryView.swift; sourceTree = "<group>"; };
+		BC4A45812BF290E200F22AF6 /* JournalEntryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryDetailView.swift; sourceTree = "<group>"; };
+		BC700DD22BF1040100E26696 /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC700DD52BF1040100E26696 /* JournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalApp.swift; sourceTree = "<group>"; };
+		BC700DD72BF1040100E26696 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC700DD92BF1040200E26696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC700DDC2BF1040200E26696 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC700DE22BF1040200E26696 /* JournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC700DE62BF1040200E26696 /* JournalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTests.swift; sourceTree = "<group>"; };
+		BC700DEC2BF1040200E26696 /* JournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC700DF02BF1040200E26696 /* JournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalUITests.swift; sourceTree = "<group>"; };
+		BC700DF22BF1040200E26696 /* JournalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC700E052BF1057500E26696 /* Satoshi-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.otf"; sourceTree = "<group>"; };
+		BC700E062BF1057500E26696 /* Satoshi-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Light.otf"; sourceTree = "<group>"; };
+		BC700E092BF1057500E26696 /* Satoshi-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.otf"; sourceTree = "<group>"; };
+		BC700E0B2BF1057500E26696 /* Satoshi-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Black.otf"; sourceTree = "<group>"; };
+		BC700E0E2BF1057500E26696 /* Satoshi-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.otf"; sourceTree = "<group>"; };
+		BC700E1B2BF1058C00E26696 /* CabinetGrotesk-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinetGrotesk-Light.otf"; sourceTree = "<group>"; };
+		BC700E1C2BF1058C00E26696 /* CabinetGrotesk-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinetGrotesk-Regular.otf"; sourceTree = "<group>"; };
+		BC700E1D2BF1058C00E26696 /* CabinetGrotesk-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinetGrotesk-Medium.otf"; sourceTree = "<group>"; };
+		BC700E1E2BF1058C00E26696 /* CabinetGrotesk-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinetGrotesk-Black.otf"; sourceTree = "<group>"; };
+		BC700E202BF1058C00E26696 /* CabinetGrotesk-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CabinetGrotesk-Bold.otf"; sourceTree = "<group>"; };
+		BC700E292BF105F900E26696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BC700E2D2BF106D600E26696 /* SatoshiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatoshiView.swift; sourceTree = "<group>"; };
+		BC700E2F2BF1091400E26696 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		BC700E312BF1093400E26696 /* CabinetGroteskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetGroteskView.swift; sourceTree = "<group>"; };
+		BC700E352BF109A800E26696 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		BC700E392BF10BB400E26696 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		BC700E3B2BF10C3100E26696 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		BC700E3E2BF10CE400E26696 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC700DCF2BF1040100E26696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC700DDF2BF1040200E26696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC700DE92BF1040200E26696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC4A457C2BF28FEE00F22AF6 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				BC700E3D2BF10CCD00E26696 /* MockData */,
+				BC700E382BF10B6C00E26696 /* Mood */,
+				BC700E372BF10B6400E26696 /* JournalEntry */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		BC4A457D2BF28FFB00F22AF6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BC4A457E2BF290A600F22AF6 /* JournaEntry */ = {
+			isa = PBXGroup;
+			children = (
+				BC4A457F2BF290C600F22AF6 /* JournalEntryView.swift */,
+				BC4A45812BF290E200F22AF6 /* JournalEntryDetailView.swift */,
+			);
+			path = JournaEntry;
+			sourceTree = "<group>";
+		};
+		BC700DC92BF1040100E26696 = {
+			isa = PBXGroup;
+			children = (
+				BC700DD42BF1040100E26696 /* Journal */,
+				BC700DE52BF1040200E26696 /* JournalTests */,
+				BC700DEF2BF1040200E26696 /* JournalUITests */,
+				BC700DD32BF1040100E26696 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC700DD32BF1040100E26696 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC700DD22BF1040100E26696 /* Journal.app */,
+				BC700DE22BF1040200E26696 /* JournalTests.xctest */,
+				BC700DEC2BF1040200E26696 /* JournalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC700DD42BF1040100E26696 /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				BC700E292BF105F900E26696 /* Info.plist */,
+				BC700E042BF1052100E26696 /* Components */,
+				BC700E032BF1048A00E26696 /* Font */,
+				BC700E022BF1048200E26696 /* Extensions */,
+				BC700E012BF1047900E26696 /* Models */,
+				BC700DFF2BF1046900E26696 /* Core */,
+				BC700DD52BF1040100E26696 /* JournalApp.swift */,
+				BC700DD72BF1040100E26696 /* ContentView.swift */,
+				BC700DD92BF1040200E26696 /* Assets.xcassets */,
+				BC700DDB2BF1040200E26696 /* Preview Content */,
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
+		BC700DDB2BF1040200E26696 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BC700DDC2BF1040200E26696 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC700DE52BF1040200E26696 /* JournalTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC700DE62BF1040200E26696 /* JournalTests.swift */,
+			);
+			path = JournalTests;
+			sourceTree = "<group>";
+		};
+		BC700DEF2BF1040200E26696 /* JournalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC700DF02BF1040200E26696 /* JournalUITests.swift */,
+				BC700DF22BF1040200E26696 /* JournalUITestsLaunchTests.swift */,
+			);
+			path = JournalUITests;
+			sourceTree = "<group>";
+		};
+		BC700DFF2BF1046900E26696 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BC700E012BF1047900E26696 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC4A457D2BF28FFB00F22AF6 /* ViewModels */,
+				BC4A457C2BF28FEE00F22AF6 /* DataModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC700E022BF1048200E26696 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC700E352BF109A800E26696 /* Colors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC700E032BF1048A00E26696 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BC700E1E2BF1058C00E26696 /* CabinetGrotesk-Black.otf */,
+				BC700E202BF1058C00E26696 /* CabinetGrotesk-Bold.otf */,
+				BC700E1B2BF1058C00E26696 /* CabinetGrotesk-Light.otf */,
+				BC700E1D2BF1058C00E26696 /* CabinetGrotesk-Medium.otf */,
+				BC700E1C2BF1058C00E26696 /* CabinetGrotesk-Regular.otf */,
+				BC700E0B2BF1057500E26696 /* Satoshi-Black.otf */,
+				BC700E052BF1057500E26696 /* Satoshi-Bold.otf */,
+				BC700E062BF1057500E26696 /* Satoshi-Light.otf */,
+				BC700E092BF1057500E26696 /* Satoshi-Medium.otf */,
+				BC700E0E2BF1057500E26696 /* Satoshi-Regular.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		BC700E042BF1052100E26696 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BC4A457E2BF290A600F22AF6 /* JournaEntry */,
+				BC700E2A2BF106B400E26696 /* Fonts */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BC700E2A2BF106B400E26696 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BC700E2C2BF106C100E26696 /* CabinetGrotesk */,
+				BC700E2B2BF106BB00E26696 /* Satoshi */,
+				BC700E2F2BF1091400E26696 /* Font.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BC700E2B2BF106BB00E26696 /* Satoshi */ = {
+			isa = PBXGroup;
+			children = (
+				BC700E2D2BF106D600E26696 /* SatoshiView.swift */,
+			);
+			path = Satoshi;
+			sourceTree = "<group>";
+		};
+		BC700E2C2BF106C100E26696 /* CabinetGrotesk */ = {
+			isa = PBXGroup;
+			children = (
+				BC700E312BF1093400E26696 /* CabinetGroteskView.swift */,
+			);
+			path = CabinetGrotesk;
+			sourceTree = "<group>";
+		};
+		BC700E372BF10B6400E26696 /* JournalEntry */ = {
+			isa = PBXGroup;
+			children = (
+				BC700E392BF10BB400E26696 /* JournalEntry.swift */,
+			);
+			path = JournalEntry;
+			sourceTree = "<group>";
+		};
+		BC700E382BF10B6C00E26696 /* Mood */ = {
+			isa = PBXGroup;
+			children = (
+				BC700E3B2BF10C3100E26696 /* Mood.swift */,
+			);
+			path = Mood;
+			sourceTree = "<group>";
+		};
+		BC700E3D2BF10CCD00E26696 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				BC700E3E2BF10CE400E26696 /* MockData.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC700DD12BF1040100E26696 /* Journal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC700DF62BF1040200E26696 /* Build configuration list for PBXNativeTarget "Journal" */;
+			buildPhases = (
+				BC700DCE2BF1040100E26696 /* Sources */,
+				BC700DCF2BF1040100E26696 /* Frameworks */,
+				BC700DD02BF1040100E26696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Journal;
+			productName = Journal;
+			productReference = BC700DD22BF1040100E26696 /* Journal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC700DE12BF1040200E26696 /* JournalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC700DF92BF1040200E26696 /* Build configuration list for PBXNativeTarget "JournalTests" */;
+			buildPhases = (
+				BC700DDE2BF1040200E26696 /* Sources */,
+				BC700DDF2BF1040200E26696 /* Frameworks */,
+				BC700DE02BF1040200E26696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC700DE42BF1040200E26696 /* PBXTargetDependency */,
+			);
+			name = JournalTests;
+			productName = JournalTests;
+			productReference = BC700DE22BF1040200E26696 /* JournalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC700DEB2BF1040200E26696 /* JournalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC700DFC2BF1040200E26696 /* Build configuration list for PBXNativeTarget "JournalUITests" */;
+			buildPhases = (
+				BC700DE82BF1040200E26696 /* Sources */,
+				BC700DE92BF1040200E26696 /* Frameworks */,
+				BC700DEA2BF1040200E26696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC700DEE2BF1040200E26696 /* PBXTargetDependency */,
+			);
+			name = JournalUITests;
+			productName = JournalUITests;
+			productReference = BC700DEC2BF1040200E26696 /* JournalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC700DCA2BF1040100E26696 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					BC700DD12BF1040100E26696 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					BC700DE12BF1040200E26696 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = BC700DD12BF1040100E26696;
+					};
+					BC700DEB2BF1040200E26696 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = BC700DD12BF1040100E26696;
+					};
+				};
+			};
+			buildConfigurationList = BC700DCD2BF1040100E26696 /* Build configuration list for PBXProject "Journal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC700DC92BF1040100E26696;
+			productRefGroup = BC700DD32BF1040100E26696 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC700DD12BF1040100E26696 /* Journal */,
+				BC700DE12BF1040200E26696 /* JournalTests */,
+				BC700DEB2BF1040200E26696 /* JournalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC700DD02BF1040100E26696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC700E102BF1057500E26696 /* Satoshi-Light.otf in Resources */,
+				BC700E152BF1057500E26696 /* Satoshi-Black.otf in Resources */,
+				BC700E0F2BF1057500E26696 /* Satoshi-Bold.otf in Resources */,
+				BC700E132BF1057500E26696 /* Satoshi-Medium.otf in Resources */,
+				BC700E242BF1058C00E26696 /* CabinetGrotesk-Regular.otf in Resources */,
+				BC700E262BF1058C00E26696 /* CabinetGrotesk-Black.otf in Resources */,
+				BC700E182BF1057500E26696 /* Satoshi-Regular.otf in Resources */,
+				BC700E232BF1058C00E26696 /* CabinetGrotesk-Light.otf in Resources */,
+				BC700DDD2BF1040200E26696 /* Preview Assets.xcassets in Resources */,
+				BC700E252BF1058C00E26696 /* CabinetGrotesk-Medium.otf in Resources */,
+				BC700E282BF1058C00E26696 /* CabinetGrotesk-Bold.otf in Resources */,
+				BC700DDA2BF1040200E26696 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC700DE02BF1040200E26696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC700DEA2BF1040200E26696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC700DCE2BF1040100E26696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC700E322BF1093400E26696 /* CabinetGroteskView.swift in Sources */,
+				BC4A45802BF290C600F22AF6 /* JournalEntryView.swift in Sources */,
+				BC700E362BF109A800E26696 /* Colors.swift in Sources */,
+				BC700E302BF1091400E26696 /* Font.swift in Sources */,
+				BC700DD82BF1040100E26696 /* ContentView.swift in Sources */,
+				BC4A45822BF290E200F22AF6 /* JournalEntryDetailView.swift in Sources */,
+				BC700E3F2BF10CE400E26696 /* MockData.swift in Sources */,
+				BC700E3C2BF10C3100E26696 /* Mood.swift in Sources */,
+				BC700DD62BF1040100E26696 /* JournalApp.swift in Sources */,
+				BC700E3A2BF10BB400E26696 /* JournalEntry.swift in Sources */,
+				BC700E2E2BF106D600E26696 /* SatoshiView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC700DDE2BF1040200E26696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC700DE72BF1040200E26696 /* JournalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC700DE82BF1040200E26696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC700DF32BF1040200E26696 /* JournalUITestsLaunchTests.swift in Sources */,
+				BC700DF12BF1040200E26696 /* JournalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC700DE42BF1040200E26696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC700DD12BF1040100E26696 /* Journal */;
+			targetProxy = BC700DE32BF1040200E26696 /* PBXContainerItemProxy */;
+		};
+		BC700DEE2BF1040200E26696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC700DD12BF1040100E26696 /* Journal */;
+			targetProxy = BC700DED2BF1040200E26696 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC700DF42BF1040200E26696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC700DF52BF1040200E26696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC700DF72BF1040200E26696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Journal/Preview Content\"";
+				DEVELOPMENT_TEAM = 7SQ7QN766K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Journal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nicorueckner.Journal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC700DF82BF1040200E26696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Journal/Preview Content\"";
+				DEVELOPMENT_TEAM = 7SQ7QN766K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Journal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nicorueckner.Journal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC700DFA2BF1040200E26696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SQ7QN766K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nicorueckner.JournalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Journal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Journal";
+			};
+			name = Debug;
+		};
+		BC700DFB2BF1040200E26696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SQ7QN766K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nicorueckner.JournalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Journal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Journal";
+			};
+			name = Release;
+		};
+		BC700DFD2BF1040200E26696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SQ7QN766K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nicorueckner.JournalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Journal;
+			};
+			name = Debug;
+		};
+		BC700DFE2BF1040200E26696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SQ7QN766K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nicorueckner.JournalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Journal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC700DCD2BF1040100E26696 /* Build configuration list for PBXProject "Journal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC700DF42BF1040200E26696 /* Debug */,
+				BC700DF52BF1040200E26696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC700DF62BF1040200E26696 /* Build configuration list for PBXNativeTarget "Journal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC700DF72BF1040200E26696 /* Debug */,
+				BC700DF82BF1040200E26696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC700DF92BF1040200E26696 /* Build configuration list for PBXNativeTarget "JournalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC700DFA2BF1040200E26696 /* Debug */,
+				BC700DFB2BF1040200E26696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC700DFC2BF1040200E26696 /* Build configuration list for PBXNativeTarget "JournalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC700DFD2BF1040200E26696 /* Debug */,
+				BC700DFE2BF1040200E26696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC700DCA2BF1040100E26696 /* Project object */;
+}
