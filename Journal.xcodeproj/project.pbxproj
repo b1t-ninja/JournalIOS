@@ -33,6 +33,13 @@
 		BC700E3A2BF10BB400E26696 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700E392BF10BB400E26696 /* JournalEntry.swift */; };
 		BC700E3C2BF10C3100E26696 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700E3B2BF10C3100E26696 /* Mood.swift */; };
 		BC700E3F2BF10CE400E26696 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC700E3E2BF10CE400E26696 /* MockData.swift */; };
+		BC75C8662BF38B930026C2EA /* EmotionStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75C8652BF38B930026C2EA /* EmotionStatisticsView.swift */; };
+		BC75C86A2BF38FCB0026C2EA /* HappiestDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75C8692BF38FCB0026C2EA /* HappiestDayView.swift */; };
+		BC8F77912BF3A3CB00E3BD70 /* GradientFill.metal in Sources */ = {isa = PBXBuildFile; fileRef = BC8F77902BF3A3CB00E3BD70 /* GradientFill.metal */; };
+		BC8F77A92BF3B44400E3BD70 /* HappiestDayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8F77A82BF3B44400E3BD70 /* HappiestDayViewViewModel.swift */; };
+		BCBF0D032BF363BA00C79B6D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF0D022BF363BA00C79B6D /* HeaderView.swift */; };
+		BCBF0D062BF3694400C79B6D /* FloatingActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF0D052BF3694400C79B6D /* FloatingActionButtonView.swift */; };
+		BCBF0D092BF36FBE00C79B6D /* EmotionChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF0D082BF36FBE00C79B6D /* EmotionChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +90,13 @@
 		BC700E392BF10BB400E26696 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
 		BC700E3B2BF10C3100E26696 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		BC700E3E2BF10CE400E26696 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		BC75C8652BF38B930026C2EA /* EmotionStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionStatisticsView.swift; sourceTree = "<group>"; };
+		BC75C8692BF38FCB0026C2EA /* HappiestDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappiestDayView.swift; sourceTree = "<group>"; };
+		BC8F77902BF3A3CB00E3BD70 /* GradientFill.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GradientFill.metal; sourceTree = "<group>"; };
+		BC8F77A82BF3B44400E3BD70 /* HappiestDayViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappiestDayViewViewModel.swift; sourceTree = "<group>"; };
+		BCBF0D022BF363BA00C79B6D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		BCBF0D052BF3694400C79B6D /* FloatingActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButtonView.swift; sourceTree = "<group>"; };
+		BCBF0D082BF36FBE00C79B6D /* EmotionChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +137,7 @@
 		BC4A457D2BF28FFB00F22AF6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				BC8F779B2BF3B18200E3BD70 /* HappiestDay */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -159,6 +174,7 @@
 		BC700DD42BF1040100E26696 /* Journal */ = {
 			isa = PBXGroup;
 			children = (
+				BC8F778F2BF3A3AF00E3BD70 /* Shaders */,
 				BC700E292BF105F900E26696 /* Info.plist */,
 				BC700E042BF1052100E26696 /* Components */,
 				BC700E032BF1048A00E26696 /* Font */,
@@ -201,6 +217,7 @@
 		BC700DFF2BF1046900E26696 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BC75C8642BF38B580026C2EA /* Emotion */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -242,6 +259,9 @@
 		BC700E042BF1052100E26696 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BC75C8672BF38FB60026C2EA /* Emotion */,
+				BCBF0D042BF3692F00C79B6D /* FloatingActionButton */,
+				BCBF0D012BF363B400C79B6D /* Header */,
 				BC4A457E2BF290A600F22AF6 /* JournaEntry */,
 				BC700E2A2BF106B400E26696 /* Fonts */,
 			);
@@ -296,6 +316,71 @@
 				BC700E3E2BF10CE400E26696 /* MockData.swift */,
 			);
 			path = MockData;
+			sourceTree = "<group>";
+		};
+		BC75C8642BF38B580026C2EA /* Emotion */ = {
+			isa = PBXGroup;
+			children = (
+				BC75C8652BF38B930026C2EA /* EmotionStatisticsView.swift */,
+			);
+			path = Emotion;
+			sourceTree = "<group>";
+		};
+		BC75C8672BF38FB60026C2EA /* Emotion */ = {
+			isa = PBXGroup;
+			children = (
+				BC75C8682BF38FBE0026C2EA /* EmotionDay */,
+				BCBF0D072BF36FAE00C79B6D /* EmotionChart */,
+			);
+			path = Emotion;
+			sourceTree = "<group>";
+		};
+		BC75C8682BF38FBE0026C2EA /* EmotionDay */ = {
+			isa = PBXGroup;
+			children = (
+				BC75C8692BF38FCB0026C2EA /* HappiestDayView.swift */,
+			);
+			path = EmotionDay;
+			sourceTree = "<group>";
+		};
+		BC8F778F2BF3A3AF00E3BD70 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				BC8F77902BF3A3CB00E3BD70 /* GradientFill.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		BC8F779B2BF3B18200E3BD70 /* HappiestDay */ = {
+			isa = PBXGroup;
+			children = (
+				BC8F77A82BF3B44400E3BD70 /* HappiestDayViewViewModel.swift */,
+			);
+			path = HappiestDay;
+			sourceTree = "<group>";
+		};
+		BCBF0D012BF363B400C79B6D /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF0D022BF363BA00C79B6D /* HeaderView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		BCBF0D042BF3692F00C79B6D /* FloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF0D052BF3694400C79B6D /* FloatingActionButtonView.swift */,
+			);
+			path = FloatingActionButton;
+			sourceTree = "<group>";
+		};
+		BCBF0D072BF36FAE00C79B6D /* EmotionChart */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF0D082BF36FBE00C79B6D /* EmotionChartView.swift */,
+			);
+			path = EmotionChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,14 +523,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC8F77912BF3A3CB00E3BD70 /* GradientFill.metal in Sources */,
+				BC75C8662BF38B930026C2EA /* EmotionStatisticsView.swift in Sources */,
 				BC700E322BF1093400E26696 /* CabinetGroteskView.swift in Sources */,
 				BC4A45802BF290C600F22AF6 /* JournalEntryView.swift in Sources */,
 				BC700E362BF109A800E26696 /* Colors.swift in Sources */,
 				BC700E302BF1091400E26696 /* Font.swift in Sources */,
+				BCBF0D062BF3694400C79B6D /* FloatingActionButtonView.swift in Sources */,
 				BC700DD82BF1040100E26696 /* ContentView.swift in Sources */,
+				BC75C86A2BF38FCB0026C2EA /* HappiestDayView.swift in Sources */,
 				BC4A45822BF290E200F22AF6 /* JournalEntryDetailView.swift in Sources */,
+				BCBF0D092BF36FBE00C79B6D /* EmotionChartView.swift in Sources */,
 				BC700E3F2BF10CE400E26696 /* MockData.swift in Sources */,
+				BCBF0D032BF363BA00C79B6D /* HeaderView.swift in Sources */,
 				BC700E3C2BF10C3100E26696 /* Mood.swift in Sources */,
+				BC8F77A92BF3B44400E3BD70 /* HappiestDayViewViewModel.swift in Sources */,
 				BC700DD62BF1040100E26696 /* JournalApp.swift in Sources */,
 				BC700E3A2BF10BB400E26696 /* JournalEntry.swift in Sources */,
 				BC700E2E2BF106D600E26696 /* SatoshiView.swift in Sources */,

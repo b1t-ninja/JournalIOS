@@ -9,6 +9,7 @@ import Foundation
 
 struct JournalEntry: Hashable, Identifiable {
   var id = UUID()
+  var isAnimated: Bool = false
   var content: String
   var created: Date
   var mood: Mood

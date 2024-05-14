@@ -14,6 +14,7 @@ struct CabinetGroteskView: View {
   var body: some View {
     Text(text)
       .font(.custom("CabinetGrotesk\(fontWeight.rawValue)", size: fontSize.rawValue))
+      .foregroundStyle(.jeeIvory)
   }
 }
 

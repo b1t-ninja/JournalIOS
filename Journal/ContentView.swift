@@ -7,47 +7,35 @@
 
 import SwiftUI
 
-// Perhaps we just use a plain old Hstack for header layout 🤷🏻‍♂️
 struct ContentView: View {
-  init() {
-    let appear = UINavigationBarAppearance()
-    
-    let atters: [NSAttributedString.Key: Any] = [
-      .font: UIFont(name: "CabinetGrotesk-Bold", size: FontSize.LARGE_TITLE.rawValue)!
-    ]
-    
-    appear.largeTitleTextAttributes = atters
-    appear.titleTextAttributes = atters
-    UINavigationBar.appearance().standardAppearance = appear
-    UINavigationBar.appearance().compactAppearance = appear
-    UINavigationBar.appearance().scrollEdgeAppearance = appear
-  }
+  var entries: [JournalEntry] = MockData.generateEntries()
   var body: some View {
     NavigationStack {
-    ScrollView {
-      LazyVStack {
-        ForEach(MockData.generateEntries(), id: \.self) { entry in
-          JournalEntryView(entry: entry)
+      // Header
+      HeaderView(
+        buttonOne: AnyView(
+          NavigationLink {
+            EmotionStatisticsView()
+          } label: {
+            Image(systemName: "chart.xyaxis.line")
+              .font(.system(size: FontSize.TITLE1.rawValue))
+              .foregroundStyle(.jeeIvory)
+          }
+        ),
+        buttonTwo: AnyView(Image(systemName: "line.horizontal.3.decrease")
+          .font(.system(size: FontSize.TITLE1.rawValue)))
+      )
+      ScrollView {
+        LazyVStack {
+          ForEach(entries.sorted { $0.created > $1.created }) { entry in
+            JournalEntryView(entry: entry)
+          }
         }
       }
-    }
-    .navigationTitle("Journal")
-    .font(.custom("CabinetGrotesk-Bold", size: 23))
-      // Todo: customize toolbar items and make them POP 🍾
-    .toolbar() {
-      HStack {
-        Button{
-          
-        } label: {
-          Text("one")
-        }
-        Button{
-          
-        } label: {
-          Text("two")
-        }
-      }
-    }
+      .overlay(
+        FloatingActionButtonView()
+          .offset(x: 150, y: 320)
+      )
     }
   }
 }
