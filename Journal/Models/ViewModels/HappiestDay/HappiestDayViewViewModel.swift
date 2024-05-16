@@ -8,31 +8,28 @@
 import Foundation
 
 public final class HappiestDayViewViewModel {
+  var dateFormatter = DateFormatter()
   var entries: [JournalEntry]
-  var daycounts: [String: Int] = [
-    "Mon": 0,
-    "Tue": 0,
-    "Wed": 0,
-    "Thu": 0,
-    "Fri": 0,
-    "Sat": 0,
-    "Sun": 0
+  
+  var moodDays: [Mood: [String]] = [
+    Mood.VERY_GOOD: [],
+    Mood.GOOD: [],
+    Mood.MEDIUM: [],
+    Mood.UNKNOWN: [],
+    Mood.LOW: []
   ]
   
-  var happiesDay: String {
-    let dateFormatter = DateFormatter()
+  var happiestDay: String {
     dateFormatter.dateFormat = "E"
-    
-    entries.forEach { entry in
-      daycounts[dateFormatter.string(from: entry.created)]! += 1
+    entries.forEach {entry in
+      moodDays[entry.mood]?.append(dateFormatter.string(from: entry.created))
     }
-    
-    if let maxEntry = daycounts.max(by: { $0.value < $1.value }) {
-      let keyOfMaxValue = maxEntry.key
-      return keyOfMaxValue
-    } else {
-      return ""
+    for (_, value) in moodDays {
+      if !value.isEmpty {
+        return value.mostCommonElement!
+      }
     }
+    return "💣"
   }
   
   init(entries: [JournalEntry]) {

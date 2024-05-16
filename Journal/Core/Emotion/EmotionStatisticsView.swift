@@ -10,20 +10,17 @@ import SwiftUI
 struct EmotionStatisticsView: View {
   var body: some View {
     ZStack {
-      Color.jeeNight.ignoresSafeArea()
+      Color.jeeLicorice.ignoresSafeArea()
       VStack {
         HeaderView(text: "Emotions")
         ScrollView {
-          HStack {
-            VStack(alignment: .leading) {
-              SatoshiView(text: "Happiest day", fontWeight: .MEDIUM, fontSize: .TITLE2)
-              HappiestDayView()
-            }
+          HStack(alignment: .top, spacing: 20) {
+            HappiestDayView()
+            // Todo: Think of a better presentation and make it represent the real thing
+            EmotionAverageView()
             Spacer()
           }
           .padding(.vertical)
-          // Happiest days
-          // Average Mood
           EmotionChartView()
         }
       }

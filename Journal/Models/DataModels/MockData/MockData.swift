@@ -10,6 +10,19 @@ import Foundation
 // Todo: Create an environment object that holds some data and can be manipulated
 // for now just an environmentvariable will do, when production, use the server OR SwiftData
 struct MockData {
+  static var now = Date.now
+  static var calendar = Calendar.current
+  
+  static var testData: [JournalEntry] = [
+    .init(content: "Today", created: calendar.date(byAdding: .day, value: 0, to: now)!, mood: .GOOD),
+    .init(content: "Tomorrow", created: calendar.date(byAdding: .day, value: 1, to: now)!, mood: .MEDIUM),
+    .init(content: "Two days from now", created: calendar.date(byAdding: .day, value: 2, to: now)!, mood: .MEDIUM),
+    .init(content: "Three days from now", created: calendar.date(byAdding: .day, value: 3, to: now)!, mood: .LOW),
+    .init(content: "Four days from now", created: calendar.date(byAdding: .day, value: 4, to: now)!, mood: .LOW),
+    .init(content: "Five days from now", created: calendar.date(byAdding: .day, value: 5, to: now)!, mood: .UNKNOWN),
+    .init(content: "Six days from now", created: calendar.date(byAdding: .day, value: 6, to: now)!, mood: .UNKNOWN),
+    .init(content: "Seven days from now", created: calendar.date(byAdding: .day, value: 7, to: now)!, mood: .GOOD),
+  ]
   static func generateEntries() -> [JournalEntry] {
     var entries: [JournalEntry] = []
     let customEntryTexts = [

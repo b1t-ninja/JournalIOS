@@ -8,7 +8,7 @@ import SwiftUI
 import Charts
 
 struct EmotionChartView: View {
-  @State private var entries: [JournalEntry] = MockData.generateEntries().sorted { $0.created > $1.created }
+  @State private var entries: [JournalEntry] = MockData.testData
   @State private var isAnimated: Bool = false
   @State private var trigger: Bool = false
   var body: some View {

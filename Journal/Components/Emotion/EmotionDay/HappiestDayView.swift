@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct HappiestDayView: View {
-  var day: String = "Sa"
+  var viewModel: HappiestDayViewViewModel = HappiestDayViewViewModel(entries: MockData.testData)
   @State private var start = Date.now
   var body: some View {
-    VStack {
+    VStack(alignment: .leading) {
+      SatoshiView(text: "Happiest day", fontWeight: .MEDIUM, fontSize: .TITLE2)
       Circle()
         .frame(width: 100)
         .foregroundStyle(.jeeIvory)
@@ -21,7 +22,7 @@ struct HappiestDayView: View {
             .foregroundStyle(.jeeNight)
         )
         .overlay(
-          SatoshiView(text: day, fontWeight: .BOLD, fontSize: .LARGE_TITLE)
+            SatoshiView(text: viewModel.happiestDay, fontWeight: .BOLD, fontSize: .LARGE_TITLE)
         )
     }
   }

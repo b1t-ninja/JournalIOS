@@ -23,7 +23,7 @@ struct FloatingActionButtonView: View {
           .padding()
           .background(.jeeOrange)
           .cornerRadius(10)
-          .frame(width: .infinity)
+          .frame(width: 300)
       }
     }
     .frame(width: 100, height: 100)
